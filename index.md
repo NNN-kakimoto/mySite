@@ -5,3 +5,4 @@ title: aaa
 ---
 ## 最初のページ。
 ...工事中
+{{ site.baseurl }}
