@@ -528,6 +528,7 @@
 }
 @media screen and (max-width: 575px) {
 	.fixed-bg{
+		height: 100%;
 		background-attachment: scroll;
 		background-size: auto 100%;
 	}
