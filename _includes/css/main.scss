@@ -514,7 +514,7 @@
 	 .highlight .il {
 		 color: #099; }
 
-@media screen and (max-width: 575px) {			 
+@media screen and (max-width: 575px) {
 	.row{
 		margin: 0;
 	}
@@ -599,4 +599,9 @@
 }
 .section-wrapper{
 	padding: 30px 0 30px 0;
+}
+@media screen and (max-width: 575px) {
+	.col-sm-6{
+		width: 100%;
+	}
 }
