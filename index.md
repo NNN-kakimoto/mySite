@@ -1,7 +1,5 @@
 ---
-layout: common
+layout: index
 #layout: page
-title: top
+title: index
 ---
-## 最初のページ。
-...工事中

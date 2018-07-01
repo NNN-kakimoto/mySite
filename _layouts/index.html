@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
+	<!-- <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+	<style>
+		{% capture styles %}
+			{% include css/main.scss %}
+		{% endcapture %}
+		{{ styles | scssify }}
+	</style>
+	
+</head>
+<body>
+	<header class="index-header fixed-bg" role="banner">
+			<div class="cover">
+				<h1 class="index-title" >{{ site.title }}</h1>
+			</div>
+	</header>
+	<main class="page-content" aria-label="Content">
+		<div class="">
+			<article>
+				<section class="section-wrapper row flex">
+					<div class="col-sm-6 flex">
+						<h2 class="section-title">How About?</h2>
+					</div>
+					<div class="col-sm-6 section-content">
+						<p>履歴書代わりになったらいいな、と密かに目論んで作成したページです。</p>
+					</div>
+				</section>
+				<section class="fixed-bg" id="section-1">
+					<div class="cover flex">
+						<h2 class="scroll-text">副部長です</h2>
+					</div>
+				</section>
+				<section class="section-wrapper row flex">
+				<div class="col-sm-6 flex">
+					<h2 class="section-title">History</h2>
+				</div>
+				<div class="col-sm-6 section-content">
+					<table class="table table-bordered">
+						<tr>
+							<th>year</th>
+							<th>content</th>
+						</tr>
+						<tr>
+							<td>2018</td>
+							<td>OIC学内特別奨励奨学生に選出</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>一眼レフカメラを購入</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>学内作品展に個人制作を出展</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>Open Source ConferenceにITCとしてブース出展</td>
+						</tr>
+						<tr>
+							<td>2017</td>
+							<td>さくらインターネットさんDC見学に参加</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>Kansai Open Forumにスタッフ参加<br>セミナーでLT枠登壇</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>高校生ICTConference 大学生ファシリテーター</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>株式会社ビューブリッジでPHPプログラマを開始</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>OIC オープンキャンパス スタッフ活動を開始</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>株式会社Divでプログラミング講師を開始</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="text-align: right;">And More...</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section class="section-wrapper row flex">
+					<div class="col-sm-6 flex">
+						<h2 class="section-title">License</h2>
+					</div>
+					<div class="col-sm-6 section-content">
+						<p>力尽きたのでそのうち書く</p>
+					</div>
+				</section>
+			</article>
+		</div>
+	</main>
+
+	<footer class="site-footer h-card">
+		<data class="u-url" href="{{ site.baseurl }}/"></data>
+			<div class="wrapper">
+				<h2 class="footer-heading">{{ site.title }}</h2>
+				<div class=" row">
+					<div class=" col-sm-6">
+						<ul class="contact-list">
+							<li class="p-name">this pages repository</li>
+							<li>
+								<a class="u-email" href="https://github.com/{{ site.github_username }}{{ site.baseurl }}" target="_blank">
+									<svg class="svg-icon">
+										<use xlink:href="{{ site.baseurl }}/assets/minima-social-icons.svg#github"></use>
+									</svg>
+									{{ site.github_username }}{{ site.baseurl }}
+							</a></li>
+							<li class="p-name">{{ site.title }}</li>
+							<li>
+								<a class="u-email" href="{{ site.email }}">
+										<img src="{{ site.baseurl}}/images/icons8-gmail-48.png" alt="mail_icon" class="icon_image">
+								{{ site.email }}
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<ul class="social-media-list">
+							<li>GitHub</li>
+							<li>
+								<a href="https://github.com/{{ site.github_username }}" target="_blank">
+									<svg class="svg-icon">
+										<use xlink:href="{{ site.baseurl }}/assets/minima-social-icons.svg#github"></use>
+									</svg>
+									<span class="username">{{ site.github_username }}</span>
+								</a>
+							</li>
+							<li>Twitter</li>
+							<li>
+								<a href="https://www.twitter.com/{{ site.twitter_username }}" target="_blank">
+									<svg class="svg-icon">
+										<use xlink:href="{{ site.baseurl }}/assets/minima-social-icons.svg#twitter"></use>
+									</svg>
+									<span class="username">{{ site.twitter_username }}</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+		
+					<div class="col-sm-6">
+						<ul class="social-media-list">
+							<li>school</li>
+							<li>
+								<a href="https://www.oic.ac.jp/" target="_blank">
+									<img src="{{ site.baseurl}}/images/icons8-ok-48.png" alt="oic_icon" class="icon_image">
+									<span class="username">大阪情報コンピュータ専門学校</span>
+								</a>
+							</li>
+							<li>Powered by ITCreateClub</li>
+							<li>
+								<a href="https://itc.moe" target="_blank">
+									<img src="{{ site.baseurl}}/images/itc_sticker@2x.png" alt="itc_icon" class="icon_image">
+									<span class="username">itc.moe</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+		
+			</div>
+		
+		</footer>
+</body>
+</html>
+
+
