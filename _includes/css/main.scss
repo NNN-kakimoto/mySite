@@ -514,11 +514,11 @@
 	 .highlight .il {
 		 color: #099; }
 
-@media screen and (max-width: 575px) {
+//@media screen and (max-width: 575px) {
 	.row{
 		margin: 0;
 	}
-}
+//}
 .fixed-bg {
 	min-height: 100vh;
 	background-size: cover;
@@ -569,7 +569,8 @@
 	max-width: 100%;
 }
 .section-title{
-	display: inline-block;
+	text-align: center;
+	//display: inline-block;
 	border-bottom: #9e3838cb 3px solid;
 }
 .section-content{
@@ -600,14 +601,4 @@
 }
 .section-wrapper{
 	padding: 30px 0 30px 0;
-}
-.half-section{
-	width: 49.6%;
-	display: inline-block;
-}
-@media screen and (max-width: 575px) {
-	.half-section{
-		display: block;
-		width: 100% !important; 
-	}
 }
