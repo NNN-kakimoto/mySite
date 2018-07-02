@@ -602,3 +602,20 @@
 .section-wrapper{
 	padding: 30px 0 30px 0;
 }
+.banner-link{
+	color: black;
+	text-decoration: none;
+	&:visited{
+		color: black;
+		text-decoration: none;
+	}
+	&:hover{
+		text-decoration: none;
+	}
+	.link-arow{
+		color: gray;
+		&:hover{
+			color: lightgray;
+		}
+	}
+}
