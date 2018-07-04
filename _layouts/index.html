@@ -13,7 +13,7 @@
 		{% endcapture %}
 		{{ styles | scssify }}
 	</style>
-	
+	<script src="{{ site.baseurl }}/js/jquery-3.2.1.min.js"></script>
 	
 </head>
 <body>
@@ -56,13 +56,17 @@
 						</tr>
 						<tr>
 							<td>-</td>
+							<td>その他<span class="show_button 2018">▼</span><span class="hide_button 2018">▲</span></td>
+						</tr>
+						<tr class="hide_row 2018">
+							<td>-</td>
 							<td>一眼レフカメラを購入</td>
 						</tr>
-						<tr>
+						<tr class="hide_row 2018">
 							<td>-</td>
 							<td>学内作品展に個人制作を出展</td>
 						</tr>
-						<tr>
+						<tr class="hide_row 2018">
 							<td>-</td>
 							<td>Open Source ConferenceにITCとしてブース出展</td>
 						</tr>
@@ -72,21 +76,25 @@
 						</tr>
 						<tr>
 							<td>-</td>
+							<td>その他<span class="show_button 2017">▼</span><span class="hide_button 2017">▲</span></td>
+						</tr>
+						<tr class="hide_row 2017">
+							<td>-</td>
 							<td>Kansai Open Forumにスタッフ参加<br>セミナーでLT枠登壇</td>
 						</tr>
-						<tr>
+						<tr class="hide_row 2017">
 							<td>-</td>
 							<td>高校生ICTConference 大学生ファシリテーター</td>
 						</tr>
-						<tr>
+						<tr class="hide_row 2017">
 							<td>-</td>
 							<td>株式会社ビューブリッジでPHPプログラマを開始</td>
 						</tr>
-						<tr>
+						<tr class="hide_row 2017">
 							<td>-</td>
 							<td>OIC オープンキャンパス スタッフ活動を開始</td>
 						</tr>
-						<tr>
+						<tr class="hide_row 2017">
 							<td>-</td>
 							<td>株式会社Divでプログラミング講師を開始</td>
 						</tr>
@@ -175,11 +183,39 @@
 						</ul>
 					</div>
 				</div>
-		
 			</div>
-		
 		</footer>
 </body>
+<!-- <script src="{{ site.baseurl }}/js/index.js"></script> -->
+<script>
+$(function(){
+	//console.log('test');
+	$('.banner-link').hover(function(){
+		//console.log('hober');
+		$(this).find('.link-arow').css('color', 'lightgray');
+	},
+	function(){
+		$('.banner-link').find('.link-arow').css('color', 'gray');
+	});
+
+	$('.show_button').click(function(){
+		var classes = $(this).attr('class').split(' ');
+		var year = classes[1];
+		// console.log(classes);
+		// console.log(year);
+		$('.show_button'+'.'+year).hide();
+		$('.hide_button'+'.'+year).css('display', 'inline');
+		$('.hide_row'+'.'+year).css('display', 'table-row');
+	});
+	$('.hide_button').click(function(){
+		var classes = $(this).attr('class').split(' ');
+		var year = classes[1];
+		$('.show_button'+'.'+year).css('display','inline');
+		$('.hide_button'+'.'+year).hide();
+		$('.hide_row'+'.'+year).css('display', 'none');
+	});
+});
+</script>
 </html>
 
 

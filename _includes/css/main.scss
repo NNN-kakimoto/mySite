@@ -592,8 +592,23 @@
 	color: white;
 }
 .table{
+	th{
+		text-align: center !important;
+	}
 	td{
 		background-color: white;
+	}
+	.hide_row{
+		display: none;
+	}
+	.hide_button{
+		display: none;
+		cursor: pointer;
+		margin-left: 20px;
+	}
+	.show_button{
+		cursor: pointer;
+		margin-left: 20px;
 	}
 }
 .page-content{
