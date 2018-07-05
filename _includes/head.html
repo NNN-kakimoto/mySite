@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>{{ include.param }} | Kakimotoのポートフォリオサイト</title>
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
+	<!-- <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+	<style>
+		{% capture styles %}
+			{% include css/main.scss %}
+		{% endcapture %}
+		{{ styles | scssify }}
+	</style>
+	<!-- <script src="{{ site.baseurl }}/js/jquery-3.2.1.min.js"></script> -->
+</head>

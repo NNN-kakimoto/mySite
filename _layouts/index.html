@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-	<meta charset="utf-8">
-	<!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>{{ page.title }}</title>
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
-	<!-- <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
-	<style>
-		{% capture styles %}
-			{% include css/main.scss %}
-		{% endcapture %}
-		{{ styles | scssify }}
-	</style>
-	<!-- <script src="{{ site.baseurl }}/js/jquery-3.2.1.min.js"></script> -->
-	
-</head>
+{% include head.html param=page.title %}
 <body>
 	<header class="index-header fixed-bg" role="banner">
-			<div class="cover">
-				<h1 class="index-title" >{{ site.title }}</h1>
-			</div>
+		<div class="cover">
+			<h1 class="index-title" >{{ site.title }}</h1>
+		</div>
 	</header>
 	<main class="page-content" aria-label="Content">
 		<div class="">
@@ -41,105 +24,105 @@
 					</div>
 				</section>
 				<section class="section-wrapper row flex">
-				<div class="col-sm-6">
-					<h2 class="section-title">History</h2>
-					<p class="section-subtext">略歴・職歴(2017～)</p>
-				</div>
-				<div class="col-sm-6 section-content">
-					<table class="table table-bordered">
-						<tr>
-							<th>year</th>
-							<th>content</th>
-						</tr>
-						<tr>
-							<td>2018</td>
-							<td>OIC学内特別奨励奨学生に選出</td>
-						</tr>
-						<tr>
-							<td>-</td>
-							<td>その他<span class="show_button 2018">▼</span><span class="hide_button 2018">▲</span></td>
-						</tr>
-						<tr class="hide_row 2018">
-							<td>-</td>
-							<td>一眼レフカメラを購入</td>
-						</tr>
-						<tr class="hide_row 2018">
-							<td>-</td>
-							<td>学内作品展に個人制作を出展</td>
-						</tr>
-						<tr class="hide_row 2018">
-							<td>-</td>
-							<td>Open Source ConferenceにITCとしてブース出展</td>
-						</tr>
-						<tr>
-							<td>2017</td>
-							<td>さくらインターネットさんDC見学に参加</td>
-						</tr>
-						<tr>
-							<td>-</td>
-							<td>その他<span class="show_button 2017">▼</span><span class="hide_button 2017">▲</span></td>
-						</tr>
-						<tr class="hide_row 2017">
-							<td>-</td>
-							<td>Kansai Open Forumにスタッフ参加<br>セミナーでLT枠登壇</td>
-						</tr>
-						<tr class="hide_row 2017">
-								<td>-</td>
-								<td>サービス「PSO2OP電卓」を運用開始</td>
+					<div class="col-sm-6">
+						<h2 class="section-title">History</h2>
+						<p class="section-subtext">略歴・職歴(2017～)</p>
+					</div>
+					<div class="col-sm-6 section-content">
+						<table class="table table-bordered">
+							<tr>
+								<th>year</th>
+								<th>content</th>
 							</tr>
-						<tr class="hide_row 2017">
-							<td>-</td>
-							<td>高校生ICTConference 大学生ファシリテーター</td>
-						</tr>
-						<tr class="hide_row 2017">
-							<td>-</td>
-							<td>株式会社ビューブリッジでPHPプログラマを開始</td>
-						</tr>
-						<tr class="hide_row 2017">
-							<td>-</td>
-							<td>OIC オープンキャンパス スタッフ活動を開始</td>
-						</tr>
-						<tr class="hide_row 2017">
-							<td>-</td>
-							<td>株式会社Divでプログラミング講師を開始</td>
-						</tr>
-						<tr class="hide_row 2017">
-							<td>-</td>
-							<td>大阪情報コンピュータ専門学校<br>
-							総合情報メディア学科 入学</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td style="text-align: right;">And More...</td>
-						</tr>
-					</table>
-				</div>
+							<tr>
+								<td>2018</td>
+								<td>OIC学内特別奨励奨学生に選出</td>
+							</tr>
+							<tr>
+								<td>-</td>
+								<td>その他<span class="show_button 2018">▼</span><span class="hide_button 2018">▲</span></td>
+							</tr>
+							<tr class="hide_row 2018">
+								<td>-</td>
+								<td>一眼レフカメラを購入</td>
+							</tr>
+							<tr class="hide_row 2018">
+								<td>-</td>
+								<td>学内作品展に個人制作を出展</td>
+							</tr>
+							<tr class="hide_row 2018">
+								<td>-</td>
+								<td>Open Source ConferenceにITCとしてブース出展</td>
+							</tr>
+							<tr>
+								<td>2017</td>
+								<td>さくらインターネットさんDC見学に参加</td>
+							</tr>
+							<tr>
+								<td>-</td>
+								<td>その他<span class="show_button 2017">▼</span><span class="hide_button 2017">▲</span></td>
+							</tr>
+							<tr class="hide_row 2017">
+								<td>-</td>
+								<td>Kansai Open Forumにスタッフ参加<br>セミナーでLT枠登壇</td>
+							</tr>
+							<tr class="hide_row 2017">
+									<td>-</td>
+									<td>サービス「PSO2OP電卓」を運用開始</td>
+								</tr>
+							<tr class="hide_row 2017">
+								<td>-</td>
+								<td>高校生ICTConference 大学生ファシリテーター</td>
+							</tr>
+							<tr class="hide_row 2017">
+								<td>-</td>
+								<td>株式会社ビューブリッジでPHPプログラマを開始</td>
+							</tr>
+							<tr class="hide_row 2017">
+								<td>-</td>
+								<td>OIC オープンキャンパス スタッフ活動を開始</td>
+							</tr>
+							<tr class="hide_row 2017">
+								<td>-</td>
+								<td>株式会社Divでプログラミング講師を開始</td>
+							</tr>
+							<tr class="hide_row 2017">
+								<td>-</td>
+								<td>大阪情報コンピュータ専門学校<br>
+								総合情報メディア学科 入学</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td style="text-align: right;">And More...</td>
+							</tr>
+						</table>
+					</div>
 				</section>
 				<section class="section-wrapper flex row">
 					<div class="col-sm-6 section-content">
-							<table class="table table-bordered">
-								<tr>
-									<td>基本情報技術者</td>
-								</tr>
-								<tr>
-									<td>C言語検定3級</td>
-								</tr>
-								<tr>
-									<td>3級陸上特殊無線技士</td>
-								</tr>
-								<tr>
-										<td>普通自動車・普通自動二輪車運転免許</td>
-								</tr>
-								<tr>
-										<td>小型車両系建設機械の操作に係る講習 修了</td>
-								</tr>
-								<tr>
-										<td>ITパスポート</td>
-								</tr>
-								<tr>
-										<td>3級情報配線施工技能士</td>
-								</tr>
-							</table>
+						<table class="table table-bordered">
+							<tr>
+								<td>基本情報技術者</td>
+							</tr>
+							<tr>
+								<td>C言語検定3級</td>
+							</tr>
+							<tr>
+								<td>3級陸上特殊無線技士</td>
+							</tr>
+							<tr>
+									<td>普通自動車・普通自動二輪車運転免許</td>
+							</tr>
+							<tr>
+									<td>小型車両系建設機械の操作に係る講習 修了</td>
+							</tr>
+							<tr>
+									<td>ITパスポート</td>
+							</tr>
+							<tr>
+									<td>3級情報配線施工技能士</td>
+							</tr>
+						</table>
 					</div>
 					<div class="col-sm-6">
 						<h2 class="section-title">License</h2>
@@ -147,98 +130,30 @@
 					</div>
 				</section>
 				<section class="section-wrapper flex">
-						<div class="col-sm-6">
-							<h2 class="section-title">Service</h2>
-							<p class="section-subtext">kakimotoが公開したサービスを載せます。</p>
+					<div class="col-sm-6">
+						<h2 class="section-title">Service</h2>
+						<p class="section-subtext">kakimotoが公開したサービスを載せます。</p>
+					</div>
+					<div class="col-sm-6 section-content">
+						
+						<div class="service_parts">
+							<h3>
+								<a class="banner-link" target="_blank" href="https://pso2op-calc.herokuapp.com/">
+									PSO2OP電卓 <span class="link-arow">»</span>
+								</a>
+							</h3>
+							<p>
+								SEGAのMMORPG「ファンタシースターオンライン2(PSO2)」での武器・ユニットに付加するオプションステータスの計算ツールです。<br>
+								herokuの時間オーバーで止まっちゃったらごめんなさい。<br>
+								あと、更新は止まってます。
+							</p>
 						</div>
-						<div class="col-sm-6 section-content">
-							
-							<div class="service_parts">
-								<h3>
-										<a class="banner-link" target="_blank" href="https://pso2op-calc.herokuapp.com/">
-											PSO2OP電卓 <span class="link-arow">»</span>
-										</a>
-								</h3>
-								<p>
-									SEGAのMMORPG「ファンタシースターオンライン2(PSO2)」での武器・ユニットに付加するオプションステータスの計算ツールです。<br>
-									herokuの時間オーバーで止まっちゃったらごめんなさい。<br>
-									あと、更新は止まってます。
-								</p>
-							</div>
-						</div>
-					</section>
+					</div>
+				</section>
 			</article>
 		</div>
 	</main>
-
-	<footer class="site-footer h-card">
-		<data class="u-url" href="{{ site.baseurl }}/"></data>
-			<div class="wrapper">
-				<h2 class="footer-heading">{{ site.title }} overview</h2>
-				<div class=" row">
-					<div class=" col-sm-6">
-						<ul class="contact-list">
-							<li class="p-name">this pages repository</li>
-							<li>
-								<a class="u-email" href="https://github.com/{{ site.github_username }}{{ site.baseurl }}" target="_blank">
-									<svg class="svg-icon">
-										<use xlink:href="{{ site.baseurl }}/assets/minima-social-icons.svg#github"></use>
-									</svg>
-									{{ site.github_username }}{{ site.baseurl }}
-							</a></li>
-							<li class="p-name">{{ site.title }}</li>
-							<li>
-								<a class="u-email" href="{{ site.email }}">
-										<img src="{{ site.baseurl}}/images/icons8-gmail-48.png" alt="mail_icon" class="icon_image">
-								{{ site.email }}
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-sm-6">
-						<ul class="social-media-list">
-							<li>GitHub</li>
-							<li>
-								<a href="https://github.com/{{ site.github_username }}" target="_blank">
-									<svg class="svg-icon">
-										<use xlink:href="{{ site.baseurl }}/assets/minima-social-icons.svg#github"></use>
-									</svg>
-									<span class="username">{{ site.github_username }}</span>
-								</a>
-							</li>
-							<li>Twitter</li>
-							<li>
-								<a href="https://www.twitter.com/{{ site.twitter_username }}" target="_blank">
-									<svg class="svg-icon">
-										<use xlink:href="{{ site.baseurl }}/assets/minima-social-icons.svg#twitter"></use>
-									</svg>
-									<span class="username">{{ site.twitter_username }}</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-		
-					<div class="col-sm-6">
-						<ul class="social-media-list">
-							<li>school</li>
-							<li>
-								<a href="https://www.oic.ac.jp/" target="_blank">
-									<img src="{{ site.baseurl}}/images/icons8-ok-48.png" alt="oic_icon" class="icon_image">
-									<span class="username">大阪情報コンピュータ専門学校</span>
-								</a>
-							</li>
-							<li>Powered by ITCreateClub</li>
-							<li>
-								<a href="https://itc.moe" target="_blank">
-									<img src="{{ site.baseurl}}/images/itc_sticker@2x.png" alt="itc_icon" class="icon_image">
-									<span class="username">itc.moe</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
+	{% include footer.html %}
 </body>
 <script src="{{ site.baseurl }}/js/jquery-3.2.1.min.js"></script>
 <script>

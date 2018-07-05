@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-	<meta charset="utf-8">
-	<title>{{ page.title }}</title>
-	<!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<style>
-		{% capture styles %}
-			{% include css/main.scss %}
-		{% endcapture %}
-		{{ styles | scssify }}
-	</style>
-</head>
+{% include head.html param=page.title %}
 <body>
 	<header class="site-header" role="banner">
 		<div class="wrapper">
@@ -41,77 +28,7 @@
 			</article>
 		</div>
 	</main>
-
-	<footer class="site-footer h-card">
-		<data class="u-url" href="{{ site.baseurl }}/"></data>
-			<div class="wrapper">
-				<h2 class="footer-heading">{{ site.title }}</h2>
-				<div class="footer-col-wrapper">
-					<div class="footer-col footer-col-1">
-						<ul class="contact-list">
-							<li class="p-name">this pages repository</li>
-							<li>
-								<a class="u-email" href="https://github.com/{{ site.github_username }}{{ site.baseurl }}" target="_blank">
-									<svg class="svg-icon">
-										<use xlink:href="{{ site.baseurl }}/assets/minima-social-icons.svg#github"></use>
-									</svg>
-									{{ site.github_username }}{{ site.baseurl }}
-							</a></li>
-							<li class="p-name">{{ site.title }}</li>
-							<li>
-								<a class="u-email" href="{{ site.email }}">
-										<img src="{{ site.baseurl}}/images/icons8-gmail-48.png" alt="mail_icon" class="icon_image">
-								{{ site.email }}
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer-col footer-col-2">
-						<ul class="social-media-list">
-							<li>GitHub</li>
-							<li>
-								<a href="https://github.com/{{ site.github_username }}" target="_blank">
-									<svg class="svg-icon">
-										<use xlink:href="{{ site.baseurl }}/assets/minima-social-icons.svg#github"></use>
-									</svg>
-									<span class="username">{{ site.github_username }}</span>
-								</a>
-							</li>
-							<li>Twitter</li>
-							<li>
-								<a href="https://www.twitter.com/{{ site.twitter_username }}" target="_blank">
-									<svg class="svg-icon">
-										<use xlink:href="{{ site.baseurl }}/assets/minima-social-icons.svg#twitter"></use>
-									</svg>
-									<span class="username">{{ site.twitter_username }}</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-		
-					<div class="footer-col footer-col-3">
-						<ul class="social-media-list">
-							<li>school</li>
-							<li>
-								<a href="https://www.oic.ac.jp/" target="_blank">
-									<img src="{{ site.baseurl}}/images/icons8-ok-48.png" alt="oic_icon" class="icon_image">
-									<span class="username">大阪情報コンピュータ専門学校</span>
-								</a>
-							</li>
-							<li>Powered by ITCreateClub</li>
-							<li>
-								<a href="https://itc.moe" target="_blank">
-									<img src="{{ site.baseurl}}/images/itc_sticker@2x.png" alt="itc_icon" class="icon_image">
-									<span class="username">itc.moe</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-		
-			</div>
-		
-		</footer>
+	{% include footer.html %}
 </body>
 </html>
 
