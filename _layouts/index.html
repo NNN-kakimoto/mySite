@@ -13,7 +13,7 @@
 		{% endcapture %}
 		{{ styles | scssify }}
 	</style>
-	<script src="{{ site.baseurl }}/js/jquery-3.2.1.min.js"></script>
+	<!-- <script src="{{ site.baseurl }}/js/jquery-3.2.1.min.js"></script> -->
 	
 </head>
 <body>
@@ -43,6 +43,7 @@
 				<section class="section-wrapper row flex">
 				<div class="col-sm-6">
 					<h2 class="section-title">History</h2>
+					<p class="section-subtext">略歴・職歴(2017～)</p>
 				</div>
 				<div class="col-sm-6 section-content">
 					<table class="table table-bordered">
@@ -83,6 +84,10 @@
 							<td>Kansai Open Forumにスタッフ参加<br>セミナーでLT枠登壇</td>
 						</tr>
 						<tr class="hide_row 2017">
+								<td>-</td>
+								<td>サービス「PSO2OP電卓」を運用開始</td>
+							</tr>
+						<tr class="hide_row 2017">
 							<td>-</td>
 							<td>高校生ICTConference 大学生ファシリテーター</td>
 						</tr>
@@ -98,6 +103,11 @@
 							<td>-</td>
 							<td>株式会社Divでプログラミング講師を開始</td>
 						</tr>
+						<tr class="hide_row 2017">
+							<td>-</td>
+							<td>大阪情報コンピュータ専門学校<br>
+							総合情報メディア学科 入学</td>
+						</tr>
 						<tr>
 							<td></td>
 							<td style="text-align: right;">And More...</td>
@@ -106,13 +116,57 @@
 				</div>
 				</section>
 				<section class="section-wrapper flex row">
+					<div class="col-sm-6 section-content">
+							<table class="table table-bordered">
+								<tr>
+									<td>基本情報技術者</td>
+								</tr>
+								<tr>
+									<td>C言語検定3級</td>
+								</tr>
+								<tr>
+									<td>3級陸上特殊無線技士</td>
+								</tr>
+								<tr>
+										<td>普通自動車・普通自動二輪車運転免許</td>
+								</tr>
+								<tr>
+										<td>小型車両系建設機械の操作に係る講習 修了</td>
+								</tr>
+								<tr>
+										<td>ITパスポート</td>
+								</tr>
+								<tr>
+										<td>3級情報配線施工技能士</td>
+								</tr>
+							</table>
+					</div>
 					<div class="col-sm-6">
 						<h2 class="section-title">License</h2>
-					</div>
-					<div class="col-sm-6 section-content">
-						<p>力尽きたのでそのうち書く</p>
+						<p class="section-subtext">これまでに取得した資格です。</p>
 					</div>
 				</section>
+				<section class="section-wrapper flex">
+						<div class="col-sm-6">
+							<h2 class="section-title">Service</h2>
+							<p class="section-subtext">kakimotoが公開したサービスを載せます。</p>
+						</div>
+						<div class="col-sm-6 section-content">
+							
+							<div class="service_parts">
+								<h3>
+										<a class="banner-link" target="_blank" href="https://pso2op-calc.herokuapp.com/">
+											PSO2OP電卓 <span class="link-arow">»</span>
+										</a>
+								</h3>
+								<p>
+									SEGAのMMORPG「ファンタシースターオンライン2(PSO2)」での武器・ユニットに付加するオプションステータスの計算ツールです。<br>
+									herokuの時間オーバーで止まっちゃったらごめんなさい。<br>
+									あと、更新は止まってます。
+								</p>
+							</div>
+						</div>
+					</section>
 			</article>
 		</div>
 	</main>
@@ -186,7 +240,7 @@
 			</div>
 		</footer>
 </body>
-<!-- <script src="{{ site.baseurl }}/js/index.js"></script> -->
+<script src="{{ site.baseurl }}/js/jquery-3.2.1.min.js"></script>
 <script>
 $(function(){
 	//console.log('test');

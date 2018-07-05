@@ -572,6 +572,11 @@
 	text-align: center;
 	//display: inline-block;
 	border-bottom: #9e3838cb 3px solid;
+	margin-bottom: 0;
+}
+.section-subtext{
+	text-align: center;
+	font-size: 0.8rem
 }
 .section-content{
 	padding:30px 15px 30px 15px;
@@ -632,5 +637,17 @@
 		&:hover{
 			color: lightgray;
 		}
+	}
+}
+.service_parts{
+	h3{
+		a{
+			font-size: 1.4rem;
+		}
+		margin-bottom: 0;
+		border-bottom: 1px solid gray;
+	}
+	p{
+		padding-left: 10px;
 	}
 }
