@@ -15,4 +15,4 @@ on Gitbash
  ```
  
 # public pages
-	[http://nnn-kakimoto.github.io/mySite](http://nnn-kakimoto.github.io/mySite)
+	[https://nnn-kakimoto.github.io/mySite/](https://nnn-kakimoto.github.io/mySite/)
