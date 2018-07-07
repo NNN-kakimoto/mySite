@@ -602,6 +602,9 @@
 #section-1{
 	background-image: url('{{site.baseurl}}/images/middle-bg.JPG');	
 }
+#section-2{
+	background-image: url('{{site.baseurl}}/images/bottom-bg.JPG');	
+}
 .scroll-text{
 	display: block;
 	position: relative;
@@ -614,6 +617,14 @@
 	line-height: 100vh;
 	color: white;
 }
+.scroll-text-2lines{
+	line-height: normal !important;
+	@media screen and (max-width: 575px) {
+		padding-top: 100px;
+	}
+}
+
+
 .table{
 	th{
 		text-align: center !important;
