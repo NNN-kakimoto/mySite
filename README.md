@@ -14,3 +14,5 @@ on Gitbash
 	$ git push origin master
  ```
  
+# public pages
+	[http://nnn-kakimoto.github.io/mySite](http://nnn-kakimoto.github.io/mySite)
