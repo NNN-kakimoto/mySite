@@ -1,0 +1,56 @@
+{
+    "contacts": [
+        {
+            "name": "Facebook",
+            "icon": "mdi-facebook-box",
+            "link": "https://www.facebook.com/KakimotoShunya",
+            "text": "KakimotoShunya"
+        },{
+            "name": "E-mail",
+            "icon": "mdi-gmail",
+            "link": "mailto:kakimototechiii@gmail.com",
+            "text": "kakimototechiii@gmail.com"
+        },{
+            "name": "Twitter",
+            "icon": "mdi-twitter",
+            "link": "https://www.twitter.com/kakimoto_itc",
+            "text": "kakimoto_itc"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "GitHub",
+            "icon": "mdi-twitter",
+            "link": "https://www.twitter.com/kakimoto_itc",
+            "text": "kakimoto_itc"
+        },{
+            "name": "Twitter",
+            "icon": "mdi-github-circle",
+            "link": "https://github.com/NNN-kakimoto",
+            "text": "NNN-kakimoto"
+        },{
+            "name": "SlideShare",
+            "icon": "mdi-linkedin-box",
+            "link": "https://www.slideshare.net/NNNkakimoto",
+            "text": "NNNkakimoto"
+        },{
+            "name": "Qiita",
+            "icon": "mdi-card-search",
+            "link": "https://qiita.com/NNN-kakimoto",
+            "text": "NNN-kakimoto"
+        }
+    ],
+    "orgs": [
+        {
+            "name": "school",
+            "icon": "mdi-school",
+            "link": "https://www.oic.ac.jp/",
+            "text": "大阪情報コンピュータ専門学校"
+        },{
+            "name": "Powered by ITCreateClub",
+            "icon": "mdi-hexagon",
+            "link": "https://itc.moe/",
+            "text": "itc.moe"
+        }
+    ]
+}

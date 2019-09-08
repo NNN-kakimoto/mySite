@@ -1,18 +1,22 @@
-# virtual machine setting
-on Gitbash
-```
-	$ cd ~/vagrant/
-	$ vagrant up
-	$ vagrant ssh
-	$ cd /vagrant/mySite
-	$ jekyll serve --host 0.0.0.0 --baseurl '' -w
- ```
+# mySite
 
-# Git
-``` 
-	$ git commit 
-	$ git push origin master
- ```
- 
-# public pages
-	[https://nnn-kakimoto.github.io/mySite/](https://nnn-kakimoto.github.io/mySite/)
+> My cool Nuxt.js project
+
+## Build Setup
+
+``` bash
+# install dependencies
+$ npm run install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
