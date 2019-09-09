@@ -14,15 +14,14 @@
       </v-btn>
     </v-app-bar>
     <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <nuxt />
     </v-content>
     <v-navigation-drawer
       v-model="rightDrawer"
       right
       temporary
       fixed
+      class="sidemenu"
     >
       <v-list>
         <v-list-item
@@ -30,7 +29,7 @@
           :key="index"
           :href="item.path">
           <v-list-item-title 
-          >{{item.title}}
+          >{{item.title.toUpperCase()}}
           </v-list-item-title>
         </v-list-item>
       </v-list>
@@ -83,6 +82,9 @@ export default {
       title: 'Kakimotoのポートフォリオサイト',
       rightMenu: [
         {
+          title: 'top',
+          path: '/'
+        },{
           title: 'about',
           path: '/about'
         }
@@ -95,5 +97,11 @@ export default {
 <style lang="scss">
 .v-list-item:hover{
   background-color: #d1d1d1;
+}
+.sidemenu{
+  z-index: 2000;
+}
+* {
+    box-sizing: border-box;
 }
 </style>

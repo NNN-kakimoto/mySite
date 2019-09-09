@@ -20,11 +20,6 @@
     "outputs": [
         {
             "name": "GitHub",
-            "icon": "mdi-twitter",
-            "link": "https://www.twitter.com/kakimoto_itc",
-            "text": "kakimoto_itc"
-        },{
-            "name": "Twitter",
             "icon": "mdi-github-circle",
             "link": "https://github.com/NNN-kakimoto",
             "text": "NNN-kakimoto"

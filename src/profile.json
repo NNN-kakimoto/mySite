@@ -62,5 +62,66 @@
                 "OSC京都に参加。ITCの元部長である森本先輩に初めて会う。"
             ]
         }
+    ],
+    "licenses": [
+        "第一種銃猟免状",
+        "猟銃等初心者講習会 修了証明書",
+        "基本情報技術者",
+        "C言語検定3級",
+        "3級陸上特殊無線技士",
+        "普通自動車・普通自動二輪車運転免許",
+        "小型車両系建設機械の操作に係る講習 修了",
+        "ITパスポート",
+        "3級情報配線施工技能士"
+    ],
+    "services" : [
+        {
+            "name" : "Cyme Capsule",
+            "path" : "https://dazzling-carson-91a253.netlify.com/",
+            "comment" : "「タイムカプセル×位置情報×デジタル」ななにか。HACK U OSAKA2019に出展。自分はバックエンドの実装やインフラを担当。"
+        },{
+            "name" : "クソ診断ジェネレータ",
+            "path" : "https://nnn-kakimoto.github.io/five-sec-judge/dist/",
+            "comment" : "2～3択の一問一答フローチャートを画像化して保存できるサービスです。Vuetifyのおかげで楽々画面設計できました。"
+        },{
+            "name" : "嵐を呼ぶサブタイトルジェネレータ",
+            "path" : "https://after-school-study-group.github.io/generator_of_call_a_storm/",
+            "comment" : "嵐を呼ぶ春日部市の超個性派5才児が登場するアニメのサブタイトルみたいな画像を作成してTweetできるサービスです。"
+        },{
+            "name" : "jekyllハンズオン的なやつ",
+            "path" : "https://nnn-kakimoto.github.io/study_jekyll_on_ghp/",
+            "comment" : "このページのv1を生成していたのがjekyllという静的ページジェネレータで、後輩の一人が教えてほしいということで、せっかくなので 備忘録がてら公開したページです。"
+        },{
+            "name" : "PSO2OP電卓",
+            "path" : "https://pso2op-calc.herokuapp.com/",
+            "comment" : "SEGAのMMORPG「ファンタシースターオンライン2(PSO2)」での武器・ユニットに付加するオプションステータスの計算ツールです。\nherokuの時間オーバーで止まっちゃったらごめんなさい。\nあと、更新は止まってます。"
+        }
+    ],
+    "medias" : [
+        {
+            "name" : "株式会社セレス 21卒インターン pert2",
+            "path" : "https://www.wantedly.com/companies/ceres-inc/post_articles/183878",
+            "comment" : "ハッカソンでは優勝をいただき、副賞のAlexa echo showは今も自室で音楽サーバーとして活躍中です。"
+        },{
+            "name" : "SPAJAM2019関西予選",
+            "path" : "https://spajam.jp/2019/entry/kansai/",
+            "comment" : "最優秀賞をいただきました。棒持ってるのが私です。"
+        },{
+            "name" : "スタディサプリ進路｜在校生レポート",
+            "path" : "https://shingakunet.com/gakko/SC001983/campusLife/9001231909/",
+            "comment" : "学校に言われるがまま載りました。特にコメントはないです。\n→(2019年4月追記)新しい人に変わってました。"
+        },{
+            "name" : "OIC｜2018年度入学式挙行",
+            "path" : "https://www.oic.ac.jp/news/details.html?tid=349",
+            "comment" : "学校に言われるがまま喋りました。特にコメントはないです。"
+        },{
+            "name" : "第10回若年者ものづくり競技大会",
+            "path" : "http://www.javada.or.jp/jyakunen20/10_taikai.html",
+            "comment" : "高校時代出場しました。「入賞者一覧」の一番下、「ロボットソフト組み込み」の職種で銀賞をいただきました。"
+        },{
+            "name" : "第11回若年者ものづくり競技大会",
+            "path" : "http://www.javada.or.jp/jyakunen20/11_taikai.html",
+            "comment" : "高校時代出場しました。「入賞者一覧」の一番下、「ロボットソフト組み込み」の職種で敢闘賞をいただきました。"
+        }
     ]
 }
