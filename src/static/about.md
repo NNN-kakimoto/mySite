@@ -1,13 +1,8 @@
----
-layout: common
-title: About
-permalink: /about/
----
-
 そもそもこのサイト自体がAboutページだとか、そういうことは言ってはいけない。
 
 ## このページについて
-このページはjekyll v3.8.3, GitHub pages, それとVS Codeで書いています。Vimは使ったことがありません。 
+このページは ~~jekyll v3.8.3~~ Nuxt.jsに移行しました, GitHub pages, それとVS Codeで書いています。Vimは使ったことがありません。 
+
 
 なお、このサイトで使用している背景などの写真は、**全て自分で撮影したもの**です。そのためピンぼけなどは指摘しないでほしいです。
 

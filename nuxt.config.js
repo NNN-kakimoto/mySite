@@ -53,7 +53,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-
+    '@nuxtjs/markdownit'
   ],
   /*
   ** vuetify module configuration
@@ -75,6 +75,18 @@ export default {
         }
       }
     }
+  },
+  markdownit: {
+    preset: 'default',
+    injected: true, 
+    breaks: true, 
+    html: true, 
+    linkify: true,
+    typography: true, 
+    xhtmlOut: true,
+    langPrefix: 'language-',
+    quotes: '“”‘’',
+    highlight: function (/*str, lang*/) { return ''; },
   },
   /*
   ** Build configuration

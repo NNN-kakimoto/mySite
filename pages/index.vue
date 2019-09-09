@@ -21,13 +21,13 @@
       >
         <div
           class="display-1 text-center article-title"
-        >How About?<v-icon>mdi-chevron-double-right</v-icon></div>
+        >How About?</div>
       </v-flex>
       <v-flex
         xs12
         sm6
       >
-        <p class="mb-0">履歴書代わりになったらいいな、と密かに目論んで作成したページです。</p>
+        <p class="mb-0">履歴書代わりになったらいいな、と密かに目論んで作成したページです。</p><n-link to="/about">くわしく</n-link>
       </v-flex>
     </v-row>
 
