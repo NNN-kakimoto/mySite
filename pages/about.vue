@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="py-10 px-5" v-html="sample"></div>
+    <div class="py-10 px-5" v-html="about"></div>
     <h2 class="mt-5 px-5 headline">以下、大きめな更新履歴を載せます。</h2>
     <v-timeline
       dense
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-  import sample from '~/src/static/about.md'
+  import about from '~/src/static/about.md'
   import changelog from '~/src/changelog.json'
 
   export default {
@@ -34,8 +34,8 @@
       }
     },
     computed: {
-      sample() {
-        return sample
+      about() {
+        return about
       }
     }
   }
