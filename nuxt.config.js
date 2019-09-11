@@ -6,11 +6,6 @@ module.exports = {
     links: links,
   }
 }
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/mySite/'
-  }
-} : {}
 
 export default {
   mode: 'universal',
@@ -88,6 +83,9 @@ export default {
     quotes: '“”‘’',
     highlight: function (/*str, lang*/) { return ''; },
   },
+  router: {
+    base: '/mySite/'
+  },
   /*
   ** Build configuration
   */
@@ -95,6 +93,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+   publicPath: '/dist/',
     extend (config, ctx) {
       config.node = {
         fs: 'empty'

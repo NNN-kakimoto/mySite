@@ -27,7 +27,7 @@
         <v-list-item
           v-for="(item, index) in rightMenu"
           :key="index"
-          :href="item.path">
+          :to="item.path">
           <v-list-item-title 
           >{{item.title.toUpperCase()}}
           </v-list-item-title>
@@ -48,7 +48,7 @@
               <v-list-item
                 v-for="(link, i) in group"
                 :key="i"
-                :href="link.link"
+                :to="link.link"
                 target="_blank"
                 flat
               >
