@@ -65,6 +65,7 @@
     ],
     "licenses": [
         "第一種銃猟免状",
+        "Dance Dance Revolution Single Play 9段",
         "猟銃等初心者講習会 修了証明書",
         "基本情報技術者",
         "C言語検定3級",
@@ -78,19 +79,19 @@
         {
             "name" : "Cyme Capsule",
             "path" : "https://dazzling-carson-91a253.netlify.com/",
-            "comment" : "「タイムカプセル×位置情報×デジタル」ななにか。HACK U OSAKA2019に出展。自分はバックエンドの実装やインフラを担当。"
+            "comment" : "「タイムカプセル×位置情報×デジタル」ななにか。HACK U OSAKA2019に出展。自分はバックエンドの実装やインフラを担当。\n発表当日、ノリでEC2にぶち上げた。"
         },{
             "name" : "クソ診断ジェネレータ",
             "path" : "https://nnn-kakimoto.github.io/five-sec-judge/dist/",
-            "comment" : "2～3択の一問一答フローチャートを画像化して保存できるサービスです。Vuetifyのおかげで楽々画面設計できました。"
+            "comment" : "2～3択の一問一答フローチャートを画像化して保存できるサービスです。Vuetifyのおかげで楽々画面設計できました。\nライブ後の打ち上げで徹夜カラオケに行って、周りが力尽きて寝ていくなか一人黙々と開発・リリース。"
         },{
             "name" : "嵐を呼ぶサブタイトルジェネレータ",
             "path" : "https://after-school-study-group.github.io/generator_of_call_a_storm/",
-            "comment" : "嵐を呼ぶ春日部市の超個性派5才児が登場するアニメのサブタイトルみたいな画像を作成してTweetできるサービスです。"
+            "comment" : "嵐を呼ぶ春日部市の超個性派5才児が登場するアニメのサブタイトルみたいな画像を作成してTweetできるサービスです。\nフロントエンドカンファレンスの運営スタッフをする横で開発・リリース。懇親会LTのネタにした。"
         },{
             "name" : "jekyllハンズオン的なやつ",
             "path" : "https://nnn-kakimoto.github.io/study_jekyll_on_ghp/",
-            "comment" : "このページのv1を生成していたのがjekyllという静的ページジェネレータで、後輩の一人が教えてほしいということで、せっかくなので 備忘録がてら公開したページです。"
+            "comment" : "このページのv1を生成していたのがjekyllという静的ページジェネレータで、後輩の一人が教えてほしいということで、せっかくなので 備忘録がてら公開したページです。\n(Nuxt移行時追記)いらない子になってしまった。"
         },{
             "name" : "PSO2OP電卓",
             "path" : "https://pso2op-calc.herokuapp.com/",
