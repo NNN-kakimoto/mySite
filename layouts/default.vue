@@ -4,7 +4,7 @@
       absolute
       app
     >
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title  ><n-link to="/" v-text="title" class="flat"/></v-toolbar-title>
       <v-spacer />
       <v-btn
         icon
@@ -44,7 +44,7 @@
         <v-row>
           <v-col v-for="(group, key) in links" :key="key">
             <v-list dense flat>
-              <v-subheader class="subtitle-1">{{key}}</v-subheader>
+              <v-subheader class="subtitle-1">{{key.toUpperCase()}}</v-subheader>
               <v-list-item
                 v-for="(link, i) in group"
                 :key="i"
@@ -87,6 +87,9 @@ export default {
         },{
           title: 'about',
           path: '/about'
+        },{
+          title: 'posts',
+          path: '/posts'
         }
       ],
       links: links
@@ -103,5 +106,9 @@ export default {
 }
 * {
     box-sizing: border-box;
+}
+a.flat{
+  text-decoration: none;
+  color:inherit;
 }
 </style>

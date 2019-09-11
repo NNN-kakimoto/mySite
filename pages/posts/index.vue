@@ -45,7 +45,7 @@ export default {
   },
   created(){
     this.displayPosts = posts.index.slice(0, 10)
-    this.pagerLength = (posts.index.length % 10 == 0 )? (posts.index.length) / 10 : (Math.floor((posts.length) / 10 + 1))
+    this.pagerLength = (posts.index.length % 10 == 0 )? (posts.index.length) / 10 : (Math.floor((posts.index.length) / 10 + 1))
     this.nowPage = 1
   },
   methods:{
