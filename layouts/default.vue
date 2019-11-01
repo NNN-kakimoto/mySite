@@ -48,7 +48,7 @@
               <v-list-item
                 v-for="(link, i) in group"
                 :key="i"
-                :to="link.link"
+                :href="link.link"
                 target="_blank"
                 flat
               >
