@@ -17,6 +17,10 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+
+# publish project
+$ rm -rf node_modules/gh-pages/.cache && gh-pages -d ./
+$ npm run deploy
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

@@ -99,5 +99,8 @@ export default {
         fs: 'empty'
       }
     }
-  }  
+  },
+  generate: {
+    fallback: true,
+  }
 }
