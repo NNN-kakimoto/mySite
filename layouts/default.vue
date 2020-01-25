@@ -65,7 +65,7 @@
         </v-row>
         <v-row>
           <v-col class="text-center">
-            2019 — <strong>{{title}}</strong>
+            2020 — <strong>{{title}}</strong>
           </v-col>
         </v-row>
       </v-container>
